@@ -1,4 +1,4 @@
-import { supabase } from "@/app/lib/supabase";
+import { supabase } from "@/lib/supabase";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown"; 
 import remarkGfm from "remark-gfm"; 

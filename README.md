@@ -1,7 +1,7 @@
 # Proyecto de Blog Personal
 
 ## Descripción
-Este proyecto es un blog desarrollado con Next.js y Supabase. Fue creado con el objetivo de probar nuevas tecnologías y poder tener un espacio propio para expresar mis ideas. 
+Este proyecto es un blog desarrollado con Next.js y Supabase. Fue creado con el objetivo de probar nuevas tecnologías y poder tener un espacio propio donde compartir mis ideas.
 
 ## Tecnologías utilizadas
 - **Next.js**: Framework de React para el desarrollo de aplicaciones web modernas y optimizadas.

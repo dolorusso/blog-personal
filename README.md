@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto de Blog Personal
 
-## Getting Started
+## Descripción
+Este proyecto es un blog desarrollado con Next.js y Supabase. Fue creado con el objetivo de probar nuevas tecnologías y poder tener un espacio propio para expresar mis ideas. 
+La aplicación permite gestionar artículos con imágenes, categorías y comentarios, además de ofrecer una experiencia moderna y optimizada.
 
-First, run the development server:
+## Tecnologías utilizadas
+- **Next.js**: Framework de React para el desarrollo de aplicaciones web modernas y optimizadas.
+- **Supabase**: Plataforma backend como servicio (BaaS) basada en PostgreSQL.
+- **Tailwind CSS**: Framework de CSS para un diseño flexible y personalizable.
+- **React Markdown**: Para la renderización de contenido en formato Markdown.
+- **Vercel**: Plataforma utilizada para el despliegue del proyecto.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Estructura del proyecto
+```
+/project-root
+│── app/
+│   ├── articles/         # Páginas de artículos
+│   │   ├── [id]/         # Página individual de un artículo
+│   │   ├── page.js       # Listado de artículos
+│   ├── layout.js         # Configuración del layout global
+│   ├── page.js           # Página principal
+│── lib/
+│   ├── supabase.js       # Configuración de Supabase
+│── public/
+│   ├── images/           # Imágenes públicas
+│── styles/
+│   ├── globals.css       # Estilos globales
+│── .gitignore            # Archivos ignorados por Git
+│── next.config.js        # Configuración de Next.js
+│── package.json          # Dependencias y scripts
+│── README.md             # Documentación del proyecto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Instalación y ejecución
+1. Clonar el repositorio:
+   ```sh
+   git clone https://github.com/usuario/repo.git
+   ```
+2. Instalar dependencias:
+   ```sh
+   npm install
+   ```
+3. Configurar variables de entorno en un archivo `.env.local`:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=tu_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_anon_key
+   ```
+4. Ejecutar el proyecto en desarrollo:
+   ```sh
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Despliegue en Vercel
+Este proyecto está configurado para desplegarse en Vercel. 
+1. Crear un nuevo proyecto en [Vercel](https://vercel.com/).
+2. Conectar el repositorio de GitHub.
+3. Agregar las variables de entorno en la configuración de Vercel.
+4. Hacer deploy desde la interfaz de Vercel o usando:
+   ```sh
+   vercel --prod
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

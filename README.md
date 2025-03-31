@@ -2,7 +2,6 @@
 
 ## Descripción
 Este proyecto es un blog desarrollado con Next.js y Supabase. Fue creado con el objetivo de probar nuevas tecnologías y poder tener un espacio propio para expresar mis ideas. 
-La aplicación permite gestionar artículos con imágenes, categorías y comentarios, además de ofrecer una experiencia moderna y optimizada.
 
 ## Tecnologías utilizadas
 - **Next.js**: Framework de React para el desarrollo de aplicaciones web modernas y optimizadas.
